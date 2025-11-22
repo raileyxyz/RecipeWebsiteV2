@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="dist/hamburgers.css" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/eaebefe9fd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo-container">
+          <img src="/image/LOGO.png" alt="Logo" class="logo" />
+          <span class="logo-text">MixNMath</span>
+        </div>
+
+        <div class="nav-buttons">
+          <button id="menuToggle">
+            <i class="fa-solid fa-bars"></i>  
+          </button>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#pastries">Pastries</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="darkModeBtn">
+              <i class="fa-regular fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1 id="title">
+          Recipe Website with
+          <span id="title-color">Ingredient Calculator</span>
+        </h1>
+        <h3 id="title2">
+          A Website of Pastry Recipes with Ingredient Calculator based on your
+          Targer Servings
+        </h3>
+        <div class="image-container">
+          <img src="image/LPImage.png" alt="Landing Page Image" />
+          <a href="#pastries">
+            <button class="img-btn">Get Started</button>
+          </a>
+        </div>
+      </section>
+
+      <section id="pastries">
+        <h1 class="title-section">SELECT PASTRY</h1>
+        <div class="food-container">
+          <div class="food-item">
+            <p id="food-name">COOKIES</p>
+            <img src="/pastry-image/Cookie.jpg" alt="Cookies Image" />
+            <a href="cookies.html">
+              <button>Select</button>
+            </a>
+            <p class="pastry-description">
+              Freshly baked cookies with a golden crisp outside and a soft,
+              chewy center. Each bite is filled with rich chocolate chips that
+              melt perfectly in your mouth. A classic treat that’s perfect for
+              any time of the day.
+            </p>
+          </div>
+
+          <div class="food-item">
+            <p>BROWNIES</p>
+            <img src="/pastry-image/Brownies.jpg" alt="Brownies Image" />
+            <a href="brownies.html">
+              <button>Select</button>
+            </a>
+            <p class="pastry-description">
+              Moist and fudgy chocolate brownies baked to perfection. They have
+              a deep cocoa flavor and a slightly crisp top layer. A delightful
+              dessert that satisfies every chocolate craving.
+            </p>
+          </div>
+
+          <div class="food-item">
+            <p>CHOCO MUFFINS</p>
+            <img src="/pastry-image/Muffin.jpg" alt="Choco Muffins Image" />
+            <a href="chocoMuffins.html">
+              <button>Select</button>
+            </a>
+            <p class="pastry-description">
+              Soft, fluffy chocolate muffins that are rich and flavorful. Loaded
+              with chocolate chunks for an extra burst of sweetness. Ideal for
+              breakfast, snacks, or dessert.
+            </p>
+          </div>
+
+          <div class="food-item">
+            <p>CHOCO CUPCAKE</p>
+            <img
+              src="/pastry-image/Chococupcake.jpg"
+              alt="Choco Cupcake Image"
+            />
+            <a href="chocoCupcake.html">
+              <button>Select</button>
+            </a>
+            <p class="pastry-description">
+              Deliciously moist chocolate cupcakes with smooth, creamy frosting.
+              Each bite is a mix of sweetness and rich cocoa flavor. Perfect for
+              parties or a sweet treat at home.
+            </p>
+          </div>
+
+          <div class="food-item">
+            <p>EGG PIE</p>
+            <img src="/pastry-image/eggpie.jpg" alt="Egg Pie Image" />
+            <a href="eggPie.html">
+              <button>Select</button>
+            </a>
+            <p>
+              A Filipino favorite with a creamy custard filling and buttery
+              crust. Baked until golden brown and slightly caramelized on top. A
+              warm, comforting dessert loved by many.
+            </p class="pastry-description">
+          </div>
+
+          <div class="food-item">
+            <p>GLAZED DOUGHNUT</p>
+            <img
+              src="/pastry-image/GlazedDonut.jpg"
+              alt="Glazed Doughnut Image"
+            />
+            <a href="glazedDoughnut.html">
+              <button>Select</button>
+            </a>
+            <p class="pastry-description">
+              Soft and airy doughnuts coated in a shiny sugar glaze. Sweet,
+              light, and melts in your mouth with every bite. A perfect treat to
+              pair with coffee or milk.
+            </p>
+          </div>
+          
+          <div class="food-item">
+            <p>ENSAIMADA</p>
+            <img src="/pastry-image/ensaimada.jpg" alt="Ensaimada Image" />
+            <a href="ensaimada.html">
+              <button>Select</button>
+            </a>
+            <p class="pastry-description">
+              Soft, buttery ensaimada that melts in your mouth perfectly
+              fluffy, lightly sweet, and topped with creamy butter, sugar, and
+              grated cheese. A comforting treat for breakfast, merienda, or any
+              time you crave a taste of home.
+            </p>
+          </div>
+
+          <div class="food-item">
+            <p>CHEESECAKE</p>
+            <img src="/pastry-image/Cheesecake.jpg" alt="Cheesecake Image" />
+            <a href="cheesecake.html">
+              <button>Select</button>
+            </a>
+            <p class="pastry-description">
+              Rich and creamy cheesecake on a buttery graham crust. Topped with
+              a touch of sweetness for the perfect balance of flavor. Every
+              slice is pure indulgence and satisfaction.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

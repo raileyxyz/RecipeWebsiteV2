@@ -1,0 +1,768 @@
+/* ======================== MAIN PAGE CSS CODE ======================== */
+
+/* FOR USERS SCROLLING */
+html {
+  scroll-behavior: smooth;
+}
+
+#home,
+#about {
+  scroll-margin-top: 100px;
+}
+
+#contact {
+  scroll-margin-top: 85px;
+}
+
+/* HEADER AND NAVIGATION */
+body {
+  background-color: #faf8fc;
+  color: #0d0811;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #faf8fc;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* LOGO IMAGE CODE */
+.logo-container img {
+  width: 50px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0d0811;
+}
+
+.logo-text:hover {
+  color: #e51515;
+  transition: color 0.4s ease, text-shadow 0.4s ease;
+  text-shadow: 0 0 10px rgba(229, 21, 21, 0.6);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  color: #0d0811;
+  font-size: 20px;
+}
+
+.nav-links li a:hover {
+  color: red;
+}
+
+#darkModeBtn {
+  background-color: #e51515;
+  color: #f3eef7;
+  border: none;
+  padding: 8px;
+  padding-left: 6px;
+  padding-right: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#darkModeBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(229, 21, 21, 0.6);
+}
+
+/* HOME SECTION */
+main {
+  text-align: center;
+}
+
+#title {
+  font-size: 3.5em;
+  color: #0d0811;
+  margin-bottom: 10px;
+  transition: color 0.4s ease, text-shadow 0.4s ease;
+  text-shadow: 0 0 10px rgba(13, 8, 17, 0.6);
+}
+
+#title-color {
+  color: #e51515;
+  transition: color 0.4s ease, text-shadow 0.4s ease;
+  text-shadow: 0 0 10px rgba(229, 21, 21, 0.6);
+}
+
+#title:hover {
+  color: #e51515;
+  text-shadow: 0 0 10px rgba(229, 21, 21, 0.6);
+}
+
+#title:hover #title-color {
+  color: #0d0811;
+  text-shadow: 0 0 10px rgba(13, 8, 17, 0.6);
+}
+
+#title2 {
+  font-size: 1.5em;
+  color: #0d0811;
+  margin-bottom: 30px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 1910px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  display: block;
+}
+
+.img-btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e51515;
+  color: #f3eef7;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.img-btn:hover {
+  transform: translate(-50%, -60%);
+  box-shadow: 0 8px 30px rgba(229, 21, 21, 0.6);
+}
+
+/* SELECTING PASTRY SECTION*/
+#service {
+  text-align: center;
+  padding: 40px;
+  background-color: #fcf8f8;
+}
+
+.title-section {
+  color: #e51515;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.food-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.food-item {
+  background-color: #f7e3e3;
+  border: none;
+  border-radius: 10px;
+  width: 18%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 5px 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.food-item:hover {
+  transform: scale(1.05);
+}
+
+.food-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.food-item button {
+  margin-top: 10px;
+  background-color: #e51515;
+  color: #faf8fc;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.food-item button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(229, 21, 21, 0.8);
+}
+
+.pastry-description {
+  text-align: justify;
+}
+/* ABOUT US SECTION */
+#our-team {
+  margin-top: -10px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 20px 20px;
+}
+
+.team-profile {
+  border: none;
+  border-radius: 15px;
+  background-color: #f7e3e3;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-profile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.team-profile img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.team-names {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #050307;
+}
+
+.team-profile p {
+  color: #555;
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.team-message {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 20px 50px;
+  line-height: 1.6;
+}
+
+.team-info {
+  text-align: justify;
+}
+
+/* CONTACT SECTION */
+#contact {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #faf8fc;
+}
+
+.contact-text {
+  color: #050307;
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+}
+
+.contact-icon i {
+  width: 45px;
+  text-align: center;
+}
+
+.contact-icon p {
+  font-weight: bold;
+  margin: 0;
+  color: #050307;
+}
+
+.contact-icon a,
+.contact-icon span {
+  font-size: 0.95em;
+  color: #555;
+  text-decoration: none;
+}
+
+.contact-icon a:hover {
+  color: #e51515;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1em;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 150px;
+  font-size: 1.4em;
+}
+
+.contact-form button {
+  background-color: #e51515;
+  color: #f3eef7;
+  width: 110%;
+  border: none;
+  padding: 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(229, 21, 21, 0.8);
+}
+
+/* FOOTER */
+footer {
+  background-color: #e51515;
+  color: #f3eef7;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.footer-links a {
+  margin: 0 15px;
+  color: #f3eef7;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 800;
+  font-family: monospace;
+}
+
+.footer-links a:hover {
+  opacity: 0.7;
+}
+
+.footer-icon {
+  padding: 30px;
+}
+
+.footer-icon i {
+  padding: 5px;
+  font-size: 30px;
+  color: #f3eef7;
+}
+
+.footer-text {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* DARK MODE WEBSITE STYLING */
+.dark-mode {
+  background-color: #050307;
+  color: #f3eef7;
+}
+
+/* NAV AND HOME DARK MODE */
+.dark-mode header {
+  background-color: #050307;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.dark-mode .logo-text {
+  color: #f3eef7;
+}
+
+.dark-mode .logo-text:hover {
+  color: #e51515;
+}
+
+.dark-mode #title {
+  font-size: 3.5em;
+  color: #f3eef7;
+  margin-bottom: 10px;
+  transition: color 0.4s ease, text-shadow 0.4s ease;
+  text-shadow: 0 0 15px rgba(243, 238, 247, 0.8);
+}
+
+.dark-mode #title-color {
+  color: #e51515;
+  transition: color 0.4s ease, text-shadow 0.4s ease;
+  text-shadow: 0 0 15px rgba(229, 21, 21, 0.8);
+}
+
+.dark-mode #title2 {
+  font-size: 1.5em;
+  color: #f3eef7;
+  transition: color 0.4s ease, text-shadow 0.4s ease;
+}
+
+.dark-mode #title:hover {
+  color: #e51515;
+  text-shadow: 0 0 15px rgba(229, 21, 21, 0.8);
+}
+
+.dark-mode #title:hover #title-color {
+  color: #f3eef7;
+  text-shadow: 0 0 15px rgba(243, 238, 247, 0.8);
+}
+
+.dark-mode .title-section {
+  color: #e51515;
+}
+
+.dark-mode .nav-links li a {
+  color: #f3eef7;
+}
+
+.dark-mode .nav-links li a:hover {
+  color: #e51515;
+}
+
+.dark-mode #darkModeBtn {
+  color: #050307;
+}
+
+.dark-mode .img-btn {
+  color: #050307;
+}
+
+/* SELECTING PASTRY DARK MODE */
+.dark-mode #service {
+  background-color: #050307;
+}
+
+.dark-mode .food-item {
+  background-color: #3a1f1f;
+  color: #f3eef7;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .food-item button {
+  background-color: #e51515;
+  color: #050307;
+}
+
+/* ABOUT US DARK MODE*/
+.dark-mode .team-profile {
+  background-color: #3a1f1f;
+  color: #f3eef7;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .team-names {
+  color: #f3eef7;
+}
+
+.dark-mode .team-profile p {
+  color: #cfcfcf;
+}
+
+.dark-mode .team-message {
+  color: #f3eef7;
+}
+
+/* DARK MODE CONTACT SECTION */
+.dark-mode #contact {
+  background-color: #050307;
+}
+
+.dark-mode .contact-text {
+  color: #f3eef7;
+}
+
+.dark-mode .contact-icon p {
+  color: #f3eef7;
+}
+
+.dark-mode .contact-icon a,
+.dark-mode .contact-icon span {
+  color: #cacaca;
+}
+
+.dark-mode .contact-icon a:hover {
+  color: #e51515;
+}
+
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea {
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  color: #f3eef7;
+}
+
+.dark-mode .contact-form input::placeholder,
+.dark-mode .contact-form textarea::placeholder {
+  color: #cacaca;
+}
+
+.dark-mode .contact-form button {
+  background-color: #e51515;
+  color: #050307;
+}
+
+.dark-mode .contact-form button:hover {
+  background-color: #e51515;
+}
+
+/* DARK MODE FOOTER */
+.dark-mode .footer-text {
+  background-color: #e51515;
+  color: #050307;
+}
+
+.dark-mode .footer-links a {
+  color: #050307;
+}
+
+.dark-mode .footer-icon i {
+  color: #050307;
+}
+/* ======================== PASTRY FILE PAGE CSS CODE ======================== */
+
+/* MAIN CONTAINER */
+.pastry-container {
+  max-width: 1400px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 30px;
+  gap: 80px;
+}
+
+.title-pastry {
+  font-weight: bold;
+}
+
+/* LEFT SIDE OR SERVING CONTAINER */
+.serving-container {
+  width: 350px;
+  text-align: center;
+}
+
+.serving-container h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #e51515;
+}
+
+.serving-container img {
+  width: 330px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.serving-input {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.serving-input input {
+  padding: 6px 8px;
+  font-size: 1rem;
+  width: 85px;
+}
+
+.serving-input button {
+  padding: 6px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #e51515;
+  border: none;
+  border-radius: 5px;
+  color: #fcf8f8;
+}
+
+.note-container {
+  text-align: justify;
+}
+
+/*  MIDDLE SIDE OR TABLE CONTAINER */
+.ingredients-container {
+  width: 360px;
+}
+
+.ingredients-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e51515;
+}
+
+.ingredients-container table {
+  width: 100%;
+  font-size: 1.15rem;
+  border-spacing: 0 12px;
+}
+
+.ingredients-container th {
+  font-size: 1.2rem;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.ingredients-container td {
+  padding: 6px 0;
+  border-bottom: 2px solid #000;
+}
+
+/* RIGHT SIDE OR PROCEDURES CONTAINER */
+.procedures-container {
+  width: 420px;
+}
+
+.procedures-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e51515;
+}
+
+.procedures-container ol {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.procedures-container li {
+  margin-bottom: 12px;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #050307;
+  color: #faf8fc;
+}
+
+.dark-mode h1 {
+  color: #faf8fc;
+}
+
+.dark-mode table td,
+.dark-mode table th {
+  color: #faf8fc;
+  border-bottom: 2px solid #faf8fc;
+}
+
+.dark-mode .serving-input input {
+  background-color: #faf8fc;
+  color: #050307;
+  border: 1px solid #555;
+}
+
+.dark-mode .serving-input button {
+  background-color: #e51515;
+  color: #050307;
+  border: none;
+  border-radius: 5px;
+}
+
+.dark-mode ol li {
+  color: #faf8fc;
+}
+
+.dark-mode header,
+.dark-mode .navBar {
+  background-color: #050307;
+}
+
+.dark-mode .nav-links a {
+  color: #faf8fc;
+}
+
+.dark-mode #darkModeBtn {
+  background-color: #e51515;
+  color: #050307;
+  border: none;
+}
+
+.dark-mode .serving-container h1,
+.procedures-container h1,
+.ingredients-container h1 {
+  color: #e51515;
+}
