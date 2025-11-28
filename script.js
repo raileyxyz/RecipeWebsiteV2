@@ -20,25 +20,27 @@ menuToggle.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const savedDarkModeTheme = localStorage.getItem("theme");
 
+  const icon = document.getElementById("darkIcon");
+
   if (savedDarkModeTheme === "dark") {
     document.body.classList.add("dark-mode");
-    document.getElementById("darkModeBtn").textContent = "";
+    icon.textContent = "light_mode"; // sun icon
   }
 });
 
 const darkModeBtn = document.getElementById("darkModeBtn");
-const darkModeIcon = darkModeBtn.querySelector("i");
+const darkModeIcon = document.getElementById("darkIcon");
 
 darkModeBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 
   if (document.body.classList.contains("dark-mode")) {
-    // Switch to sun icon (light style)
-    darkModeIcon.classList.remove("fa-moon");
-    darkModeIcon.classList.add("fa-sun");
+    // Switch to sun icon
+    darkModeIcon.textContent = "light_mode";
+    localStorage.setItem("theme", "dark");
   } else {
     // Switch back to moon icon
-    darkModeIcon.classList.remove("fa-sun");
-    darkModeIcon.classList.add("fa-moon");
+    darkModeIcon.textContent = "dark_mode";
+    localStorage.setItem("theme", "light");
   }
 });
