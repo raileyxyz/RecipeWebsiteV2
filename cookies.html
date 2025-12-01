@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe's Pastry Cookies</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/eaebefe9fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo-container">
+          <img src="/image/LOGO.png" alt="Logo" class="logo" />
+          <span class="logo-text">MixNMath</span>
+        </div>
+
+        <div class="nav-buttons">
+          <button id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="/index.html#home">Home</a></li>
+          <li><a href="/index.html#pastries">Pastries</a></li>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+          <li>
+            <button id="darkModeBtn">
+              <span class="material-symbols-rounded" id="darkIcon"
+                >dark_mode</span
+              >
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SERVING -->
+    <main>
+      <div class="pastry-container">
+        <div class="serving-container">
+          <h1 class="title-pastry">Cookies</h1>
+          <div class="cookies-image">
+            <img src="/pastry-image/cookiess.png" alt="Cookies Image" />
+          </div>
+
+          <div class="serving-input">
+            <label for="cookie-servings">Serving:</label>
+            <input type="number" id="cookies-servings" min="1" />
+            <button onclick="cookiesIngredients()">Enter</button>
+          </div>
+
+          <div class="note-container">
+            <p>
+              Freshly baked cookies with a golden crisp outside and a soft,
+              chewy center. Each bite is filled with rich chocolate chips that
+              melt perfectly in your mouth. A classic treat that’s perfect for
+              any time of the day.
+            </p>
+          </div>
+        </div>
+
+        <!-- INGREDIENT TABLE -->
+        <div class="ingredients-container">
+          <h1 class="title-pastry">All Ingredients</h1>
+          <table class="ingredient-table">
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Butter</td>
+                <td id="cookies-butter">0</td>
+              </tr>
+              <tr>
+                <td>White Sugar</td>
+                <td id="cookies-white-sugar">0</td>
+              </tr>
+              <tr>
+                <td>Brown Sugar</td>
+                <td id="cookies-brown-sugar">0</td>
+              </tr>
+              <tr>
+                <td>All Purpose Cream</td>
+                <td id="cookies-cream">0</td>
+              </tr>
+              <tr>
+                <td>Egg</td>
+                <td id="cookies-egg">0</td>
+              </tr>
+              <tr>
+                <td>Vanilla Extract</td>
+                <td id="cookies-vanilla">0</td>
+              </tr>
+              <tr>
+                <td>All Purpose Flour</td>
+                <td id="cookies-flour">0</td>
+              </tr>
+              <tr>
+                <td>Baking Soda</td>
+                <td id="cookies-baking-soda">0</td>
+              </tr>
+              <tr>
+                <td>Fine Salt</td>
+                <td id="cookies-salt">0</td>
+              </tr>
+              <tr>
+                <td>Chocolate Chips</td>
+                <td id="cookies-chocolate">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- PROCEDURE -->
+        <div class="procedures-container">
+          <h1 class="title-pastry" id="title-pastry2">Procedures</h1>
+          <ol>
+            <li>
+              Using a spatula, mix butter with white and brown sugar. Mix until
+              light and smooth. (10 mins)
+            </li>
+            <li>
+              Add All Purpose Cream, then mix in eggs and vanilla extract until
+              well combined. (3 mins)
+            </li>
+            <li>
+              Sift flour, baking soda, and salt. Add to cream mixture and mix
+              until just combined. Do not overmix. Mix in chocolate chips. (5
+              mins)
+            </li>
+            <li>
+              Refrigerate dough for about 2 hours. After chilling, mold into
+              golf-ball size portions and chill for another 10 mins. (20 mins)
+            </li>
+            <li>
+              Preheat oven to 350°F for 30 mins. Grease pan and line with
+              aluminum foil. Place cookie dough pieces 3 inches apart, press
+              lightly, and bake for 10–15 mins. Set aside to cool completely.
+              Serve. (45 mins)
+            </li>
+          </ol>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

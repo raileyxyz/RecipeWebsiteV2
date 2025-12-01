@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe's Pastry Glazed Doughnut</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/eaebefe9fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo-container">
+          <img src="/image/LOGO.png" alt="Logo" class="logo" />
+          <span class="logo-text">MixNMath</span>
+        </div>
+
+        <div class="nav-buttons">
+          <button id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="/index.html#home">Home</a></li>
+          <li><a href="/index.html#pastries">Pastries</a></li>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+          <li>
+            <button id="darkModeBtn">
+              <span class="material-symbols-rounded" id="darkIcon"
+                >dark_mode</span
+              >
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SERVING -->
+    <main>
+      <div class="pastry-container">
+        <div class="serving-container">
+          <h1 class="title-pastry">Glazed Doughnut</h1>
+          <div class="glazedDoughnut-image">
+            <img
+              src="/pastry-image/glazedDonut.png"
+              alt="Glazed Doughnut Image"
+            />
+          </div>
+
+          <div class="serving-input">
+            <label for="glazedDoughnut-servings">Serving:</label>
+            <input type="number" id="glazedDoughnut-servings" min="1" />
+            <button onclick="glazedDoughnutIngredients()">Enter</button>
+          </div>
+
+          <div class="note-container">
+            <p>
+              Soft and airy doughnuts coated in a shiny sugar glaze. Sweet,
+              light, and melts in your mouth with every bite. A perfect treat to
+              pair with coffee or milk.
+            </p>
+          </div>
+        </div>
+
+        <!-- INGREDIENT TABLE -->
+        <div class="ingredients-container">
+          <h1 class="title-pastry">All Ingredients</h1>
+          <table class="ingredient-table">
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Milk</td>
+                <td id="donut-milk">0</td>
+              </tr>
+              <tr>
+                <td>Yeast</td>
+                <td id="donut-yeast">0</td>
+              </tr>
+              <tr>
+                <td>Sugar</td>
+                <td id="donut-sugar">0</td>
+              </tr>
+              <tr>
+                <td>Egg</td>
+                <td id="donut-egg">0</td>
+              </tr>
+              <tr>
+                <td>Butter</td>
+                <td id="donut-butter">0</td>
+              </tr>
+              <tr>
+                <td>Vanilla</td>
+                <td id="donut-vanilla">0</td>
+              </tr>
+              <tr>
+                <td>Nutmeg</td>
+                <td id="donut-nutmeg">0</td>
+              </tr>
+              <tr>
+                <td>Salt</td>
+                <td id="donut-salt">0</td>
+              </tr>
+              <tr>
+                <td>Flour</td>
+                <td id="donut-flour">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- PROCEDURE -->
+        <div class="procedures-container">
+          <h1 class="title-pastry" id="title-pastry2">Procedures</h1>
+          <ol>
+            <li>Warm the milk to about 110°F (43°C).</li>
+            <li>
+              Combine warm milk, yeast, and sugar in a bowl. Stir gently and let
+              sit for 5–10 minutes until frothy.
+            </li>
+            <li>
+              In another bowl, whisk eggs, melted butter, vanilla extract, and
+              nutmeg.
+            </li>
+            <li>Pour the egg mixture into the yeast mixture and mix well.</li>
+            <li>Add part of the flour and salt, mix until combined.</li>
+            <li>Gradually add the remaining flour until a soft dough forms.</li>
+            <li>Knead the dough for 5–7 minutes until smooth and elastic.</li>
+            <li>Form into a ball, place in a greased bowl, and cover.</li>
+            <li>Let rise 1½–2 hours, or until doubled in size.</li>
+            <li>Punch down the dough, roll out to ½ inch thick.</li>
+            <li>Cut into doughnut shapes using cutters.</li>
+            <li>
+              Place on a tray, cover, and let rise again for 30–45 minutes.
+            </li>
+            <li>
+              Heat oil to 350°F (177°C) and fry doughnuts 1 minute per side
+              until golden.
+            </li>
+            <li>Drain on paper towels or wire rack.</li>
+            <li>
+              For the glaze: mix confectioners’ sugar, milk or cream, and
+              vanilla extract.
+            </li>
+            <li>Dip warm doughnuts into glaze and let excess drip off.</li>
+            <li>Place on rack to allow glaze to set before serving.</li>
+          </ol>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

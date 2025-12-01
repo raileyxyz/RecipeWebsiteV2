@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe's Pastry Choco cupcake</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/eaebefe9fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo-container">
+          <img src="/image/LOGO.png" alt="Logo" class="logo" />
+          <span class="logo-text">MixNMath</span>
+        </div>
+
+        <div class="nav-buttons">
+          <button id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="/index.html#home">Home</a></li>
+          <li><a href="/index.html#pastries">Pastries</a></li>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+          <li>
+            <button id="darkModeBtn">
+              <span class="material-symbols-rounded" id="darkIcon"
+                >dark_mode</span
+              >
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SERVING -->
+    <main>
+      <div class="pastry-container">
+        <div class="serving-container">
+          <h1 class="title-pastry">Choco Cupcake</h1>
+          <div class="brownies-image">
+            <img
+              src="/pastry-image/chocoCupcake.png"
+              alt="Choco Cupcake Image"
+            />
+          </div>
+
+          <div class="serving-input">
+            <label for="brownies-servings">Serving:</label>
+            <input type="number" id="chocoCupcake-servings" min="1" />
+            <button onclick="chocoCupcakeIngredients()">Enter</button>
+          </div>
+
+          <div class="note-container">
+            <p>
+              Deliciously moist chocolate cupcakes with smooth, creamy frosting.
+              Each bite is a mix of sweetness and rich cocoa flavor. Perfect for
+              parties or a sweet treat at home.
+            </p>
+          </div>
+        </div>
+
+        <!-- INGREDIENT TABLE -->
+        <div class="ingredients-container">
+          <h1 class="title-pastry">All Ingredients</h1>
+          <table class="ingredient-table">
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Flour</td>
+                <td id="cupcake-flour">0</td>
+              </tr>
+              <tr>
+                <td>Sugar</td>
+                <td id="cupcake-sugar">0</td>
+              </tr>
+              <tr>
+                <td>Cocoa Powder</td>
+                <td id="cupcake-cocoa">0</td>
+              </tr>
+              <tr>
+                <td>Baking Soda</td>
+                <td id="cupcake-baking-soda">0</td>
+              </tr>
+              <tr>
+                <td>Salt</td>
+                <td id="cupcake-salt">0</td>
+              </tr>
+              <tr>
+                <td>Buttermilk</td>
+                <td id="cupcake-buttermilk">0</td>
+              </tr>
+              <tr>
+                <td>Oil</td>
+                <td id="cupcake-oil">0</td>
+              </tr>
+              <tr>
+                <td>Egg</td>
+                <td id="cupcake-egg">0</td>
+              </tr>
+              <tr>
+                <td>Vanilla Extract</td>
+                <td id="cupcake-vanilla">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- PROCEDURE -->
+        <div class="procedures-container">
+          <h1 class="title-pastry" id="title-pastry2">Procedures</h1>
+          <ol>
+            <li>Prepare materials and ingredients.</li>
+            <li>
+              Preheat the oven to 180°C (350°F) and line the cupcake pan with
+              paper liners.
+            </li>
+            <li>
+              Mix the dry ingredients: flour, sugar, cocoa powder, baking soda,
+              and salt.
+            </li>
+            <li>
+              Combine wet ingredients: buttermilk, oil, beaten egg, and vanilla
+              extract. Stir until blended.
+            </li>
+            <li>
+              Pour wet mixture into the dry ingredients. Mix gently until smooth
+              and lump-free (avoid overmixing).
+            </li>
+            <li>Fill cupcake liners about ¾ full with batter.</li>
+            <li>
+              Bake for 12–18 minutes or until a toothpick inserted comes out
+              clean.
+            </li>
+            <li>
+              Cool cupcakes in the tray for a few minutes before transferring to
+              a wire rack. Decorate if desired.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

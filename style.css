@@ -435,6 +435,12 @@ main {
   background-color: #7c1515;
 }
 
+.contact-icon i {
+  width: 2.8125rem;
+  font-size: 1.7rem;
+  color: #050307;
+}
+
 /* Footer */
 footer {
   background-color: #e51515;
@@ -460,6 +466,121 @@ footer {
 .footer-text {
   margin-top: 0.5em;
   font-size: clamp(1rem, 3vw, 2rem);
+}
+
+/* ======================== PASTRY FILE PAGE CSS CODE ======================== */
+
+/* MAIN CONTAINER */
+.pastry-container {
+  max-width: 1400px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 20px;
+  gap: 80px;
+}
+
+.title-pastry {
+  font-weight: bold;
+  margin-top: -50px;
+}
+
+/* LEFT SIDE OR SERVING CONTAINER */
+.serving-container {
+  width: 350px;
+  text-align: center;
+}
+
+.serving-container h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #e51515;
+}
+
+.serving-container img {
+  width: 330px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.serving-input {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.serving-input input {
+  padding: 6px 8px;
+  font-size: 1rem;
+  width: 85px;
+}
+
+.serving-input button {
+  padding: 6px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #e51515;
+  border: none;
+  border-radius: 5px;
+  color: #fcf8f8;
+}
+
+.note-container {
+  text-align: justify;
+}
+
+/*  MIDDLE SIDE OR TABLE CONTAINER */
+.ingredients-container {
+  width: 360px;
+}
+
+.ingredients-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e51515;
+}
+
+.ingredients-container table {
+  width: 100%;
+  font-size: 1.15rem;
+  border-spacing: 0 12px;
+}
+
+.ingredients-container th {
+  font-size: 1.2rem;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.ingredients-container td {
+  padding: 6px 0;
+  border-bottom: 2px solid #000;
+}
+
+/* RIGHT SIDE OR PROCEDURES CONTAINER */
+.procedures-container {
+  width: 420px;
+}
+
+.procedures-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e51515;
+}
+
+.procedures-container ol {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.procedures-container li {
+  margin-bottom: 12px;
 }
 
 /* DARK MODE */
@@ -653,6 +774,54 @@ footer {
   color: #050307;
 }
 
+/* ======================== PASTRY FILE PAGE DARK MODE CODE ======================== */
+
+.dark-mode h1 {
+  color: #f3eef7;
+}
+
+.dark-mode table td,
+.dark-mode table th {
+  color: #f3eef7;
+  border-bottom: 2px solid #f3eef7;
+}
+
+.dark-mode .serving-input input {
+  background-color: #f3eef7;
+  color: #050307;
+  border: 1px solid #555;
+}
+
+.dark-mode .serving-input button {
+  background-color: #e51515;
+  color: #050307;
+  border: none;
+  border-radius: 5px;
+}
+
+.dark-mode ol li {
+  color: #f3eef7;
+}
+
+.dark-mode header,
+.dark-mode .navBar {
+  background-color: #050307;
+}
+
+.dark-mode .nav-links a {
+  color: #f3eef7;
+}
+
+.dark-mode #darkModeBtn {
+  color: #f3eef7;
+}
+
+.dark-mode .serving-container h1,
+.procedures-container h1,
+.ingredients-container h1 {
+  color: #e51515;
+}
+
 /* Tablet (768px+) */
 @media (min-width: 768px) {
   /* Hide Hamburger Menu */
@@ -753,6 +922,12 @@ footer {
     font-size: clamp(0.9rem, 2vw, 1.2rem);
   }
 
+  .contact-icon i {
+    width: 2.8125rem;
+    font-size: 1.7rem;
+    color: #050307;
+  }
+
   /* FOOTER */
   footer {
     background-color: #e51515;
@@ -788,6 +963,52 @@ footer {
     margin-top: 10px;
     font-size: 16px;
   }
+
+  /* PASTRY FILE PAGE CSS CODE */
+  .pastry-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 30px 20px;
+    padding: 20px;
+  }
+
+  .serving-container {
+    grid-column: 1 / 2;
+  }
+
+  .ingredients-container {
+    grid-column: 2 / 3;
+  }
+
+  .procedures-container {
+    grid-column: 1 / 3;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .serving-container,
+  .ingredients-container {
+    text-align: center;
+  }
+
+  .procedures-container {
+    text-align: left;
+  }
+
+  .serving-container img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .ingredients-container table {
+    font-size: 0.95rem;
+  }
+
+  .procedures-container ol {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 }
 
 /* Desktop */
@@ -798,7 +1019,7 @@ footer {
 
   #pastries,
   #contact {
-    scroll-margin-top: 4.5em; /* or whatever height your sticky header + padding is */
+    scroll-margin-top: 4.5em;
   }
 
   .food-container {
@@ -1064,6 +1285,125 @@ footer {
   .footer-text {
     margin-top: 10px;
     font-size: 16px;
+  }
+
+  /* ======================== PASTRY FILE PAGE CSS CODE ======================== */
+
+  /* MAIN CONTAINER */
+  .pastry-container {
+    max-width: 1400px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 30px;
+    gap: 80px;
+  }
+
+  .title-pastry {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  #title-pastry2 {
+    margin-top: -20px;
+  }
+
+  /* LEFT SIDE OR SERVING CONTAINER */
+  .serving-container {
+    width: 350px;
+    text-align: center;
+  }
+
+  .serving-container h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #e51515;
+  }
+
+  .serving-container img {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .serving-input {
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+
+  .serving-input input {
+    padding: 6px 8px;
+    font-size: 1rem;
+    width: 85px;
+  }
+
+  .serving-input button {
+    padding: 6px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #e51515;
+    border: none;
+    border-radius: 5px;
+    color: #fcf8f8;
+  }
+
+  .note-container {
+    text-align: justify;
+  }
+
+  /*  MIDDLE SIDE OR TABLE CONTAINER */
+  .ingredients-container {
+    width: 360px;
+  }
+
+  .ingredients-container h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e51515;
+  }
+
+  .ingredients-container table {
+    width: 100%;
+    font-size: 1.15rem;
+    border-spacing: 0 12px;
+  }
+
+  .ingredients-container th {
+    font-size: 1.2rem;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+
+  .ingredients-container td {
+    padding: 6px 0;
+    border-bottom: 2px solid #000;
+  }
+
+  /* RIGHT SIDE OR PROCEDURES CONTAINER */
+  .procedures-container {
+    width: 420px;
+  }
+
+  .procedures-container h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e51515;
+  }
+
+  .procedures-container ol {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .procedures-container li {
+    margin-bottom: 12px;
   }
 }
 

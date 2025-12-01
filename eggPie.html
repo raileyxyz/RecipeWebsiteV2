@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe's Pastry Egg Pie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/eaebefe9fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo-container">
+          <img src="/image/LOGO.png" alt="Logo" class="logo" />
+          <span class="logo-text">MixNMath</span>
+        </div>
+
+        <div class="nav-buttons">
+          <button id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="/index.html#home">Home</a></li>
+          <li><a href="/index.html#pastries">Pastries</a></li>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+          <li>
+            <button id="darkModeBtn">
+              <span class="material-symbols-rounded" id="darkIcon"
+                >dark_mode</span
+              >
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SERVING -->
+    <main>
+      <div class="pastry-container">
+        <div class="serving-container">
+          <h1 class="title-pastry">Egg Pie</h1>
+          <div class="eggPie-image">
+            <img src="/pastry-image/eggpiee.png" alt="Egg Pie Image" />
+          </div>
+
+          <div class="serving-input">
+            <label for="eggPie-servings">Serving:</label>
+            <input type="number" id="eggPie-servings" min="1" />
+            <button onclick="eggPieIngredients()">Enter</button>
+          </div>
+
+          <div class="note-container">
+            <p>
+              A Filipino favorite with a creamy custard filling and buttery
+              crust. Baked until golden brown and slightly caramelized on top. A
+              warm, comforting dessert loved by many
+            </p>
+          </div>
+        </div>
+
+        <!-- INGREDIENT TABLE -->
+        <div class="ingredients-container">
+          <h1 class="title-pastry">All Ingredients</h1>
+          <table class="ingredient-table">
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>All-purpose flour</td>
+                <td id="eggpie-flour">0</td>
+              </tr>
+              <tr>
+                <td>Salt</td>
+                <td id="eggpie-salt">0</td>
+              </tr>
+              <tr>
+                <td>Sugar (for crust)</td>
+                <td id="eggpie-sugar1">0</td>
+              </tr>
+              <tr>
+                <td>Unsalted butter (cubed)</td>
+                <td id="eggpie-butter">0</td>
+              </tr>
+              <tr>
+                <td>Egg yolk</td>
+                <td id="eggpie-yolk">0</td>
+              </tr>
+              <tr>
+                <td>Vanilla (for crust)</td>
+                <td id="eggpie-vanilla1">0</td>
+              </tr>
+              <tr>
+                <td>Ice water</td>
+                <td id="eggpie-water">0</td>
+              </tr>
+              <tr>
+                <td>Evaporated milk</td>
+                <td id="eggpie-milk">0</td>
+              </tr>
+              <tr>
+                <td>Whole eggs</td>
+                <td id="eggpie-whole-egg">0</td>
+              </tr>
+              <tr>
+                <td>Sugar (for filling)</td>
+                <td id="eggpie-sugar2">0</td>
+              </tr>
+              <tr>
+                <td>Vanilla (for filling)</td>
+                <td id="eggpie-vanilla2">0</td>
+              </tr>
+              <tr>
+                <td>Egg white (for topping)</td>
+                <td id="eggpie-white">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- PROCEDURE -->
+        <div class="procedures-container">
+          <h1 class="title-pastry" id="title-pastry2">Procedures</h1>
+          <ol>
+            <h3><b>For the crust:</b></h3>
+            <li>Whisk together flour, salt, and sugar in a bowl.</li>
+            <li>Add cubed butter and mix until it resembles coarse crumbs.</li>
+            <li>
+              Add egg yolk, vanilla, and ice water (save the egg white for
+              later).
+            </li>
+            <li>Mix until a dough forms; knead lightly until smooth.</li>
+            <li>Cover the dough and refrigerate for 1 hour.</li>
+            <li>
+              Roll out the chilled dough on a floured surface (about 1/8"
+              thick).
+            </li>
+            <li>Place into a 9-inch pie dish, trim, and crimp edges neatly.</li>
+            <li>Refrigerate the crust while preparing the filling.</li>
+            <br />
+            <h3><b>For the filling:</b></h3>
+            <li>Preheat the oven to 350°F (175°C).</li>
+            <li>Warm the evaporated milk in a saucepan until just lukewarm.</li>
+            <li>
+              In a bowl, beat the eggs and gradually add sugar while whisking.
+            </li>
+            <li>Stir in the warmed milk and vanilla extract until smooth.</li>
+            <li>Strain the mixture to remove bubbles or lumps (optional).</li>
+            <li>Pour the filling into the prepared crust.</li>
+            <li>
+              Beat the reserved egg white until frothy and gently spoon it over
+              the top.
+            </li>
+            <li>
+              Bake for 45–50 minutes, or until golden brown and set in the
+              center.
+            </li>
+            <li>Cool completely before slicing and serving.</li>
+          </ol>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

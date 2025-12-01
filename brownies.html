@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe's Pastry Brownies</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/eaebefe9fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo-container">
+          <img src="/image/LOGO.png" alt="Logo" class="logo" />
+          <span class="logo-text">MixNMath</span>
+        </div>
+
+        <div class="nav-buttons">
+          <button id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="/index.html#home">Home</a></li>
+          <li><a href="/index.html#pastries">Pastries</a></li>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+          <li>
+            <button id="darkModeBtn">
+              <span class="material-symbols-rounded" id="darkIcon"
+                >dark_mode</span
+              >
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SERVING -->
+    <main>
+      <div class="pastry-container">
+        <div class="serving-container">
+          <h1 class="title-pastry">Brownies</h1>
+          <div class="brownies-image">
+            <img src="/pastry-image/browniess.png" alt="Brownies Image" />
+          </div>
+
+          <div class="serving-input">
+            <label for="brownies-servings">Serving:</label>
+            <input type="number" id="brownies-servings" min="1" />
+            <button onclick="browniesIngredients()">Enter</button>
+          </div>
+
+          <div class="note-container">
+            <p>
+              Moist and fudgy chocolate brownies baked to perfection. They have
+              a deep cocoa flavor and a slightly crisp top layer. A delightful
+              dessert that satisfies every chocolate craving
+            </p>
+          </div>
+        </div>
+
+        <!-- INGREDIENT TABLE -->
+        <div class="ingredients-container">
+          <h1 class="title-pastry">All Ingredients</h1>
+          <table class="ingredient-table">
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Butter (melted)</td>
+                <td id="brownies-butter">0</td>
+              </tr>
+              <tr>
+                <td>Dark Chocolate Chips (melted)</td>
+                <td id="brownies-dark-chocolate">0</td>
+              </tr>
+              <tr>
+                <td>All Purpose Cream</td>
+                <td id="brownies-cream">0</td>
+              </tr>
+              <tr>
+                <td>White Sugar</td>
+                <td id="brownies-white-sugar">0</td>
+              </tr>
+              <tr>
+                <td>Brown Sugar</td>
+                <td id="brownies-brown-sugar">0</td>
+              </tr>
+              <tr>
+                <td>Egg</td>
+                <td id="brownies-egg">0</td>
+              </tr>
+              <tr>
+                <td>Vanilla Extract</td>
+                <td id="brownies-vanilla">0</td>
+              </tr>
+              <tr>
+                <td>All Purpose Flour</td>
+                <td id="brownies-flour">0</td>
+              </tr>
+              <tr>
+                <td>Fine Salt</td>
+                <td id="brownies-salt">0</td>
+              </tr>
+              <tr>
+                <td>Cocoa Powder</td>
+                <td id="brownies-cocoa">0</td>
+              </tr>
+              <tr>
+                <td>Semi-sweet Chocolate Chips (optional)</td>
+                <td id="brownies-semi-sweet-chocolate">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- PROCEDURE -->
+        <div class="procedures-container">
+          <h1 class="title-pastry" id="title-pastry2">Procedures</h1>
+          <ol>
+            <li>Pre-heat the oven to 320°F.</li>
+            <li>
+              Using a whisk, mix melted butter, melted chocolate, and All
+              Purpose Cream. Stir in white and brown sugar. Mix until smooth (2
+              minutes).
+            </li>
+            <li>
+              Whisk in the eggs one at a time. Add vanilla extract and whisk
+              until smooth (3 minutes).
+            </li>
+            <li>
+              Sift flour, salt, and cocoa powder in a separate bowl. Add the dry
+              ingredient mix to the wet ingredients until just combined. Do not
+              overmix (3 minutes).
+            </li>
+            <li>
+              Grease a baking pan and line with aluminum foil. Pour the mixture
+              then top with semi-sweet chocolate. Bake for 20 minutes or until a
+              skewer comes out clean when inserted in the middle.
+            </li>
+            <li>
+              Set aside to cool completely. Remove from the pan and peel off the
+              aluminum foil. Cut into serving pieces and serve (10 minutes).
+            </li>
+          </ol>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe's Pastry Cheesecake</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/eaebefe9fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo-container">
+          <img src="/image/LOGO.png" alt="Logo" class="logo" />
+          <span class="logo-text">MixNMath</span>
+        </div>
+
+        <div class="nav-buttons">
+          <button id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="/index.html#home">Home</a></li>
+          <li><a href="/index.html#pastries">Pastries</a></li>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+          <li>
+            <button id="darkModeBtn">
+              <span class="material-symbols-rounded" id="darkIcon"
+                >dark_mode</span
+              >
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SERVING -->
+    <main>
+      <div class="pastry-container">
+        <div class="serving-container">
+          <h1 class="title-pastry">Cheesecake</h1>
+          <div class="cheesecake-image">
+            <img src="/pastry-image/cheesecakee.png" alt="Cheesecake Image" />
+          </div>
+
+          <div class="serving-input">
+            <label for="cheesecake-servings">Serving:</label>
+            <input type="number" id="cheesecake-servings" min="1" />
+            <button onclick="cheesecakeIngredients()">Enter</button>
+          </div>
+
+          <div class="note-container">
+            <p>
+              Cheesecake is a dessert made with a creamy filling of cheese,
+              eggs, and sugar over a crust, typically made from crushed cookies
+              or graham crackers. It is known for its rich, smooth, and dense
+              texture and can be either baked or unbaked, served chilled.
+              Variations include different types of cheese (like cream cheese
+              for New York-style), unique crusts, and various toppings, such as
+              fruit sauces, whipped cream, or chocolate.
+            </p>
+          </div>
+        </div>
+
+        <!-- INGREDIENT TABLE -->
+        <div class="ingredients-container">
+          <h1 class="title-pastry">All Ingredients</h1>
+          <table class="ingredient-table">
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Graham cracker crumbs</td>
+                <td id="cheesecake-crumbs">0</td>
+              </tr>
+              <tr>
+                <td>Sugar</td>
+                <td id="cheesecake-sugar">0</td>
+              </tr>
+              <tr>
+                <td>Butter (melted)</td>
+                <td id="cheesecake-butter">0</td>
+              </tr>
+              <tr>
+                <td>Full-fat cream cheese</td>
+                <td id="cheesecake-creamcheese">0</td>
+              </tr>
+              <tr>
+                <td>Granulated sugar</td>
+                <td id="cheesecake-granulated-sugar">0</td>
+              </tr>
+              <tr>
+                <td>Pure vanilla extract</td>
+                <td id="cheesecake-vanilla">0</td>
+              </tr>
+              <tr>
+                <td>Large eggs</td>
+                <td id="cheesecake-eggs">0</td>
+              </tr>
+              <tr>
+                <td>Large egg yolks</td>
+                <td id="cheesecake-yolks">0</td>
+              </tr>
+              <tr>
+                <td>Heavy cream</td>
+                <td id="cheesecake-cream">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- PROCEDURE -->
+        <div class="procedures-container">
+          <h1 class="title-pastry" id="title-pastry2">Procedures</h1>
+          <ol>
+            <li>Preheat oven to 350°F (175°C).</li>
+            <li>Lightly spray a 9″ springform pan with non-stick spray.</li>
+            <li>
+              Wrap the bottom and sides of the pan with heavy-duty tinfoil (use
+              several layers to prevent water from seeping in during the water
+              bath).
+            </li>
+            <li>Set the pan aside.</li>
+            <li>
+              In a large bowl, combine graham cracker crumbs, sugar, and melted
+              butter; mix well.
+            </li>
+            <li>Firmly press the mixture into the prepared pan.</li>
+            <li>Bake for 8 minutes.</li>
+            <li>
+              Remove and place on a cooling rack while preparing the filling.
+            </li>
+            <li>
+              In a high-power blender, food processor, stand mixer (with whisk
+              attachment), or large bowl with a hand mixer, beat softened cream
+              cheese until completely smooth, scraping the bowl as needed.
+            </li>
+            <li>
+              Add sugar and vanilla; beat until smooth, scraping down the sides
+              and bottom of the bowl.
+            </li>
+            <li>
+              Add eggs and yolks one at a time, beating well after each
+              addition.
+            </li>
+            <li>Add the cream and mix until just incorporated.</li>
+            <li>
+              Pour the filling into the prepared crust and smooth the top with a
+              silicone spatula.
+            </li>
+            <li>
+              Place the cheesecake pan into a large, deep pan and fill with 2
+              inches of hot water (this creates the water bath).
+            </li>
+            <li>
+              Carefully place in the oven and bake for 1 hour and 10 minutes.
+            </li>
+            <li>
+              Turn the oven off and let the cheesecake sit inside (door closed)
+              for 45 minutes — it should still be slightly wiggly in the center.
+            </li>
+            <li>
+              Remove from oven and gently run a knife around the edge of the
+              cake.
+            </li>
+            <li>Place on a cooling rack and let cool completely.</li>
+            <li>
+              Loosely cover with plastic wrap and chill for at least 8 hours.
+            </li>
+            <li>
+              Cheesecake will keep covered in the fridge for up to 5 days.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

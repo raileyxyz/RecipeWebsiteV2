@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe's Pastry Ensaimada</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/eaebefe9fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo-container">
+          <img src="/image/LOGO.png" alt="Logo" class="logo" />
+          <span class="logo-text">MixNMath</span>
+        </div>
+
+        <div class="nav-buttons">
+          <button id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="/index.html#home">Home</a></li>
+          <li><a href="/index.html#pastries">Pastries</a></li>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+          <li>
+            <button id="darkModeBtn">
+              <span class="material-symbols-rounded" id="darkIcon"
+                >dark_mode</span
+              >
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SERVING -->
+    <main>
+      <div class="pastry-container">
+        <div class="serving-container">
+          <h1 class="title-pastry">Ensaimada</h1>
+          <div class="ensaimada-image">
+            <img src="/pastry-image/ensaimadaa.png" alt="Ensaimada Image" />
+          </div>
+
+          <div class="serving-input">
+            <label for="ensaimada-servings">Serving:</label>
+            <input type="number" id="ensaimada-servings" min="1" />
+            <button onclick="ensaimadaIngredients()">Enter</button>
+          </div>
+
+          <div class="note-container">
+            <p>
+              Soft, buttery ensaymada that melts in your mouth. Perfectly
+              fluffy, lightly sweet, and topped with creamy butter, sugar, and
+              grated cheese. A comforting treat for breakfast, merienda, or any
+              time you crave a taste of home.
+            </p>
+          </div>
+        </div>
+
+        <!-- INGREDIENT TABLE -->
+        <div class="ingredients-container">
+          <h1 class="title-pastry">All Ingredients</h1>
+          <table class="ingredient-table">
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>All-Purpose Flour</td>
+                <td id="ensai-flour">0</td>
+              </tr>
+              <tr>
+                <td>Butter, melted</td>
+                <td id="ensai-butter">0</td>
+              </tr>
+              <tr>
+                <td>White Sugar</td>
+                <td id="ensai-sugar">0</td>
+              </tr>
+              <tr>
+                <td>Salt</td>
+                <td id="ensai-salt">0</td>
+              </tr>
+              <tr>
+                <td>Grated Cheddar Cheese</td>
+                <td id="ensai-cheese">0</td>
+              </tr>
+              <tr>
+                <td>Raw Egg</td>
+                <td id="ensai-egg">0</td>
+              </tr>
+              <tr>
+                <td>Rapid Rise Yeast</td>
+                <td id="ensai-yeast">0</td>
+              </tr>
+              <tr>
+                <td>Fresh Milk (warm)</td>
+                <td id="ensai-milk">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- PROCEDURE -->
+        <div class="procedures-container">
+          <h1 class="title-pastry" id="title-pastry2">Procedures</h1>
+          <ol>
+            <li>
+              Combine warm milk, yeast, and sugar, and stir until yeast and
+              sugar dissolve in milk. Set aside to activate (about 10 minutes).
+            </li>
+            <li>
+              In a mixing bowl, combine all the dry ingredients: flour, sugar,
+              and salt. Mix thoroughly.
+            </li>
+            <li>
+              Add eggs, butter, and the activated yeast mixture. Mix until a
+              dough forms.
+            </li>
+            <li>Knead the dough until smooth and fine in texture.</li>
+            <li>
+              Place the dough in a bowl, cover with a cloth, and let it rise for
+              2 hours.
+            </li>
+            <li>
+              Flatten the dough on a surface and punch lightly to release air.
+            </li>
+            <li>Divide the dough into four pieces using a dough slicer.</li>
+            <li>
+              Roll each piece into a cylindrical shape and cut into individual
+              servings (around 80 g each).
+            </li>
+            <li>Flatten each piece with a rolling pin.</li>
+            <li>
+              Mix melted butter and white sugar. Brush the mixture on the center
+              of each flattened dough.
+            </li>
+            <li>
+              Sprinkle cheese on top, then seal and roll the dough into a long
+              cylinder (about 14 inches).
+            </li>
+            <li>
+              Form the spiral Ensaimada shape by crossing the ends and tucking
+              them in the center.
+            </li>
+            <li>
+              Place on a tray with wax paper, cover, and let rise for another 45
+              minutes.
+            </li>
+            <li>Preheat the oven to 350°F (175°C) for 10 minutes.</li>
+            <li>Bake the dough for 15 minutes at 350°F (175°C).</li>
+            <li>
+              Brush baked Ensaimada with remaining butter-sugar mix and sprinkle
+              with more cheese.
+            </li>
+            <li>Serve hot and enjoy!</li>
+          </ol>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

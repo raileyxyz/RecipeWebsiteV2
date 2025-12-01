@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe's Pastry Choco Muffins</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/eaebefe9fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo-container">
+          <img src="/image/LOGO.png" alt="Logo" class="logo" />
+          <span class="logo-text">MixNMath</span>
+        </div>
+
+        <div class="nav-buttons">
+          <button id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="/index.html#home">Home</a></li>
+          <li><a href="/index.html#pastries">Pastries</a></li>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+          <li>
+            <button id="darkModeBtn">
+              <span class="material-symbols-rounded" id="darkIcon"
+                >dark_mode</span
+              >
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SERVING -->
+    <main>
+      <div class="pastry-container">
+        <div class="serving-container">
+          <h1 class="title-pastry">Choco Muffins</h1>
+          <div class="chocoMuffins-image">
+            <img
+              src="/pastry-image/chocoMuffinss.png"
+              alt="Choco Muffins Image"
+            />
+          </div>
+
+          <div class="serving-input">
+            <label for="chocoMuffins-servings">Serving:</label>
+            <input type="number" id="chocoMuffins-servings" min="1" />
+            <button onclick="chocoMuffinsIngredients()">Enter</button>
+          </div>
+
+          <div class="note-container">
+            <p>
+              Soft, fluffy chocolate muffins that are rich and flavorful. Loaded
+              with chocolate chunks for an extra burst of sweetness. Ideal for
+              breakfast, snacks, or dessert
+            </p>
+          </div>
+        </div>
+
+        <!-- INGREDIENT TABLE -->
+        <div class="ingredients-container">
+          <h1 class="title-pastry">All Ingredients</h1>
+          <table class="ingredient-table">
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Plain Flour (all-purpose flour)</td>
+                <td id="muffins-flour">0</td>
+              </tr>
+              <tr>
+                <td>Baking Soda</td>
+                <td id="muffins-baking-soda">0</td>
+              </tr>
+              <tr>
+                <td>Salt</td>
+                <td id="muffins-salt">0</td>
+              </tr>
+              <tr>
+                <td>Dutch Process Cocoa Powder</td>
+                <td id="muffins-cocoa">0</td>
+              </tr>
+              <tr>
+                <td>Instant Coffee (optional)</td>
+                <td id="muffins-coffee">0</td>
+              </tr>
+              <tr>
+                <td>Hot Full-Fat Milk</td>
+                <td id="muffins-milk">0</td>
+              </tr>
+              <tr>
+                <td>Canola Oil</td>
+                <td id="muffins-oil">0</td>
+              </tr>
+              <tr>
+                <td>Brown Sugar</td>
+                <td id="muffins-sugar">0</td>
+              </tr>
+              <tr>
+                <td>Vanilla Extract</td>
+                <td id="muffins-vanilla">0</td>
+              </tr>
+              <tr>
+                <td>Sour Cream / Yogurt</td>
+                <td id="muffins-sour-cream">0</td>
+              </tr>
+              <tr>
+                <td>Large Egg</td>
+                <td id="muffins-egg">0</td>
+              </tr>
+              <tr>
+                <td>Chocolate Chips</td>
+                <td id="muffins-choco">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- PROCEDURE -->
+        <div class="procedures-container">
+          <h1 class="title-pastry" id="title-pastry2">Procedures</h1>
+          <ol>
+            <li>Prepare your tools and ingredients.</li>
+            <li>
+              Preheat oven to 180°C (350°F) and line muffin tray with paper
+              liners.
+            </li>
+            <li>
+              Mix the dry ingredients: flour, baking soda, salt, cocoa powder,
+              coffee (optional).
+            </li>
+            <li>
+              Dissolve instant coffee in hot milk (if used) and let cool
+              slightly.
+            </li>
+            <li>
+              Combine wet ingredients: oil, brown sugar, vanilla extract, sour
+              cream/yogurt, egg. Mix until smooth.
+            </li>
+            <li>Add milk mixture to wet ingredients. Stir gently.</li>
+            <li>
+              Gradually add dry mixture to wet mixture. Stir until just
+              combined. Do not overmix.
+            </li>
+            <li>Fold in chocolate chips evenly.</li>
+            <li>
+              Fill muffin cups ¾ full and bake for 15–20 minutes or until a
+              toothpick comes out clean.
+            </li>
+            <li>
+              Cool muffins in tray 5 minutes, then transfer to wire rack to cool
+              completely before serving.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
